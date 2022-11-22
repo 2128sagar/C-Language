@@ -9,34 +9,34 @@ units           price per unit.
 #include <stdio.h>
 void main()
 {
-    float unit, bill;
+    int unit, price, amount;
 
     printf("Enter Electrical Units : ");
-    scanf("%f",&unit);
+    scanf("%d",&unit);
 
-    if (unit)
+    
+    if (unit < 100)
     {
-        printf("Your Total Electricity Bill is : ");
+        price=1;
     }
-  /*  else if(100<200 * 2)
+    else if(unit >= 100 && unit <200)
     {
-        printf("Your Total Electricity Bill is : ");
+        price = 2;
     }
-    else if(200<300 * 3)
+    else if(unit >=200 && unit < 300)
     {
-        printf("Your Total Electricity Bill is : ");
+        price = 3;
     }
-    else if(300<400 * 4)
+    else if(unit >=300 && unit <400)
     {
-        printf("Your Total Electricity Bill is : ");
+        price = 4;
     }
-    else if(400>400 * 5)
-    {
-        printf("Your Electricity Bill is : ");
-    }*/
     else
     {
-        printf("\nBad Value______");
+        price = 5;
     }
+        amount = unit*price;
+        printf("Your Electricity Bill is : %d",amount);
+
         printf("\n_______________");
 }
