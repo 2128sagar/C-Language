@@ -45,4 +45,9 @@ void main()
         answer = 108200000 - 57900000;
         printf("Planet Distance is : %d",answer);
     }
+    else if(planet1==2 && planet2==2)
+    {
+        answer = 108200000 - 108200000;
+        printf("Planet Distance is : %d",answer);
+    }
 }
