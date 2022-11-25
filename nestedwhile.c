@@ -1,4 +1,9 @@
 //Write a programe to print inverted half pyramid
+// *****
+// ****
+// ***
+// **
+// *
 #include<stdio.h>
 void main()
 {
